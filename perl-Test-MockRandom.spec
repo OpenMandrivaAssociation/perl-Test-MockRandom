@@ -62,3 +62,22 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Mon Apr 25 2011 Funda Wang <fwang@mandriva.org> 1.00-3mdv2011.0
++ Revision: 658888
+- rebuild for updated spec-helper
+
+* Mon Sep 14 2009 Thierry Vignaud <tv@mandriva.org> 1.00-2mdv2010.0
++ Revision: 440697
+- rebuild
+
+* Fri Feb 20 2009 Jérôme Quelin <jquelin@mandriva.org> 1.00-1mdv2009.1
++ Revision: 343333
+- import perl-Test-MockRandom
+
+
+* Fri Feb 20 2009 cpan2dist 1.00-1mdv
+- initial mdv release, generated with cpan2dist
+
