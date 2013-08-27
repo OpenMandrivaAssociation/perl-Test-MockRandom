@@ -1,17 +1,14 @@
-
 %define realname   Test-MockRandom
-%define version    1.00
-%define release    %mkrel 3
+%define upstream_version    1.00
 
 Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
+Version:    %perl_convert_version %{upstream_version}
+Release:    4
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Override randoms with non-random behavior
-Source:     http://www.cpan.org/modules/by-module/Test/%{realname}-%{version}.tar.gz
+Source:     http://www.cpan.org/modules/by-module/Test/Test-MockRandom-%{upstream_version}.tar.gz
 Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: perl-devel
 BuildRequires: perl(Module::Build::Compat)
 
@@ -39,7 +36,7 @@ Alternatively, this module can be used to generate objects, with each
 object maintaining its own distinct seed array.
 
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{realname}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -49,14 +46,9 @@ object maintaining its own distinct seed array.
 make test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
-%clean
-rm -rf %buildroot
-
 %files
-%defattr(-,root,root)
 %doc Changes README LICENSE
 %{_mandir}/man3/*
 %perl_vendorlib/*
@@ -80,4 +72,5 @@ rm -rf %buildroot
 
 * Fri Feb 20 2009 cpan2dist 1.00-1mdv
 - initial mdv release, generated with cpan2dist
+
 
