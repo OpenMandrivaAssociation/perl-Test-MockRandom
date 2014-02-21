@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   Test-MockRandom-1.00.tar.gz: 207416f6810b334c2d92c3ffff6f17d6ae4144e9
+sources:
+  Test-MockRandom-1.01.tar.gz: 64be35a02a3adfceb8eee4784e62a9a94b96604d

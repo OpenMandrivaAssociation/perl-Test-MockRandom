@@ -1,9 +1,9 @@
 %define realname   Test-MockRandom
-%define upstream_version    1.00
+%define upstream_version 1.01
 
 Name:       perl-%{realname}
 Version:    %perl_convert_version %{upstream_version}
-Release:    4
+Release:    1
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Override randoms with non-random behavior
@@ -72,5 +72,6 @@ make test
 
 * Fri Feb 20 2009 cpan2dist 1.00-1mdv
 - initial mdv release, generated with cpan2dist
+
 
 
