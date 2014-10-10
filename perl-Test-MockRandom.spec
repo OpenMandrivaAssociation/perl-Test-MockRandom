@@ -3,7 +3,7 @@
 
 Name:       perl-%{realname}
 Version:    %perl_convert_version %{upstream_version}
-Release:    1
+Release:    2
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Override randoms with non-random behavior
