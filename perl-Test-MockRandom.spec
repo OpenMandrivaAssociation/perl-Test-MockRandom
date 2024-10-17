@@ -8,7 +8,7 @@ License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Override randoms with non-random behavior
 Source:     http://www.cpan.org/modules/by-module/Test/Test-MockRandom-%{upstream_version}.tar.gz
-Url:        http://search.cpan.org/dist/%{realname}
+Url:        https://search.cpan.org/dist/%{realname}
 BuildRequires: perl-devel
 BuildRequires: perl(Module::Build::Compat)
 
