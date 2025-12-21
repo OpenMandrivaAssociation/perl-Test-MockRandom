@@ -9,6 +9,7 @@ Group:      Development/Perl
 Summary:    Override randoms with non-random behavior
 Source:     http://www.cpan.org/modules/by-module/Test/Test-MockRandom-%{upstream_version}.tar.gz
 Url:        https://search.cpan.org/dist/%{realname}
+BuildRequires:	make
 BuildRequires: perl-devel
 BuildRequires: perl(Module::Build::Compat)
 
