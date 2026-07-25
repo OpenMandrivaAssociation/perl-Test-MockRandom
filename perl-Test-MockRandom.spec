@@ -2,13 +2,13 @@
 %define upstream_version 1.01
 
 Name:       perl-%{realname}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    %{upstream_version}
+Release:    4
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Override randoms with non-random behavior
-Source:     http://www.cpan.org/modules/by-module/Test/Test-MockRandom-%{upstream_version}.tar.gz
-Url:        https://search.cpan.org/dist/%{realname}
+Source:     https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Test-MockRandom-%{upstream_version}.tar.gz
+Url:        https://github.com/dagolden/Test-MockRandom
 BuildRequires:	make
 BuildRequires: perl-devel
 BuildRequires: perl(Module::Build::Compat)
